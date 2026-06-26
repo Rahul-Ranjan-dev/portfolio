@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <title>RJ PORTFOLIO</title>
 </head>
 <body>
-    
-    <h1 align="center">welcome to my portfolio</h1><br/>
-    <table border="1" width="100%">
-      <tr><td bgcolor="yellow">
-    <p align="center">
-    <a href="index.html">home</a>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="add/hire.html">hireme</a>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="add/project.html">project</a>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="add/contact.html">contact me</a>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      </p>
-      </td></tr>
-      </table>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color:grey !important;display:flex;justify-content:space-evenly;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="./add/hire.html">hire me</a>
+        <a class="nav-link" href="./add/project.html">projects</a>
+        <a class="nav-link" href="./add/contact.html">contact me</a>
+      </div>
+    </div>
+  </div>
+</nav>
       <br>
       <table align="center" width="100%"><tr><td>
       <p>💻 About Me
@@ -65,7 +64,7 @@ CRUD-based projects (reviews, posts, items) using MongoDB.</p></td>
           </tr>
           <tr>
             <td align="center">NODE JS</td>
-            <td align="center"><img src="add/node js.png" alt="node js" height="200px" width="200px" > </td>
+            <td align="center"><img src="add/nodejs.png" alt="node js" height="200px" width="200px" > </td>
           </tr>
           <tr>
             <td align="center">EXPRESS JS</td>
@@ -120,5 +119,6 @@ Git & GitHub for Version Control
             <td>8.04(till 3rd sem)</td>
         </tr>
     </table>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
