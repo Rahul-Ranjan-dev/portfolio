@@ -8,7 +8,7 @@
   <style>
     /* Custom responsive background colors */
     body{
-    background-color:pink;
+    background-color:black;
     }
     .about-section {
       background-color: lightblue; /* default for mobile */
@@ -20,7 +20,11 @@
     }
     @media (min-width: 992px) {
       .about-section {
-        background-color: lightgreen; /* desktops */
+        background-color:lightgreen; /* desktops */
+      }
+      .image img:hover{
+           box-shadow:2px 5px 5px yellow !important;
+         
       }
     }
   </style>
@@ -29,7 +33,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="index.html">Home</a>
+      <a class="navbar-brand" href="./index.html">Home</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
               aria-label="Toggle navigation">
@@ -37,9 +41,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <div class="navbar-nav ms-auto">
-          <a class="nav-link" href="./add/hire.html">Hire Me</a>
-          <a class="nav-link" href="./add/project.html">Projects</a>
-          <a class="nav-link" href="./add/contact.html">Contact Me</a>
+          <a class="nav-link" href="hire.html">Hire Me</a>
+          <a class="nav-link" href="project.html">Projects</a>
+          <a class="nav-link" href="contact.html">Contact Me</a>
         </div>
       </div>
     </div>
@@ -63,7 +67,7 @@
           </ul>
         </div>
         <!-- Image -->
-        <div class="col-12 col-md-5 text-center">
+        <div class="col-12  image col-md-5 text-center">
           <img src="add/rahulpro2.jpeg" alt="Rahul profile pic" class="img-fluid rounded-circle shadow" height="300px" width="300px">
         </div>
       </div>
