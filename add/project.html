@@ -1,19 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .project-card img {
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .project-card {
+      margin-bottom: 30px;
+    }
+
+    /* ✅ Custom media query */
+    @media (max-width: 600px) {
+      .project-card img {
+        height: 180px;       /* smaller image on mobile */
+      }
+      .project-card p {
+        font-size: 14px;     /* smaller text */
+      }
+    }
+        @media (max-width: 900px) {
+      .project-card img {
+        height: 180px;       /* smaller image on mobile */
+      }
+      .project-card p {
+        font-size:28px;     /* smaller text */
+      }
+    }
+  </style>
 </head>
 <body>
-    
-  
-      <marquee><h1>welcome to my projects page</h1><br/></marquee>
-          <!-- Navbar -->
+
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="./index.html">Home</a>
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Home</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
               data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
               aria-label="Toggle navigation">
@@ -28,21 +54,38 @@
       </div>
     </div>
   </nav>
-      </p>
-            </td></tr>
-      </table>
-      <br>
-      <table border="2" align="center">
-        <tr>
-            <td>project1</td>
-            <td><a href="https://github.com/Rahul-Ranjan-dev/TASK" target="blank">click to see project</a></td>
-        </tr>
-        <tr>
-            <td>project2</td>
-            <td><a href="https://github.com/Rahul-Ranjan-dev/intership-project/" target="blank">click to see project</a></td>
-        </tr>
-      </table>
-       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+
+  <!-- Projects Section -->
+  <div class="container my-5">
+    <div class="row">
+      <!-- Project 1 -->
+      <div class="col-md-6 project-card">
+        <div class="card shadow">
+          <a href="https://rahul-ranjan-dev.github.io/portfolio/" target="_blank">
+            <img src="portfolio.png" class="card-img-top" alt="Portfolio Project">
+          </a>
+          <div class="card-body">
+              <p class="card-text">
+              Made a responsive portfolio website using HTML, CSS, and JavaScript.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6 project-card">
+        <div class="card shadow">
+          <img src="placeholder.png" class="card-img-top" alt="Internship Project">
+          <div class="card-body">
+            <a href="https://github.com/Rahul-Ranjan-dev/intership-project" target="_blank" class="btn btn-primary">
+              View Project on GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
